@@ -12,6 +12,8 @@ import siteConfig from './siteConfig.json';
 
 import templates from './data/templates';
 import { mockAnalysis } from './data/analysis_mock';
+import IntroOverlay from './components/IntroOverlay';
+import ArrowOverlay from './components/ArrowOverlay';
 
 function App() {
   // Theme State
@@ -168,7 +170,9 @@ function App() {
   const themeClasses = `App ${themeConfig.styles.layout} ${themeConfig.styles.chat} ${themeConfig.styles.terminal}`;
 
   return (
-    <div className={themeClasses}>
+    <div className={themeClasses} style={{ position: 'relative' }}>
+      <IntroOverlay theme={activeTheme} />
+      <ArrowOverlay theme={activeTheme} color={themeConfig.intro.fontColor} />
       <CanvasBackground theme={activeTheme} />
       <LandingSection themeConfig={themeConfig} />
 
