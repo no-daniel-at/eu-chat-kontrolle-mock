@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/eu-chat-kontrolle-mock/static/css/main.7fed5f56.css",
-    "main.js": "/eu-chat-kontrolle-mock/static/js/main.c0980f52.js",
+    "main.css": "/eu-chat-kontrolle-mock/static/css/main.004ab09f.css",
+    "main.js": "/eu-chat-kontrolle-mock/static/js/main.67c6964c.js",
     "index.html": "/eu-chat-kontrolle-mock/index.html",
-    "main.7fed5f56.css.map": "/eu-chat-kontrolle-mock/static/css/main.7fed5f56.css.map",
-    "main.c0980f52.js.map": "/eu-chat-kontrolle-mock/static/js/main.c0980f52.js.map"
+    "main.004ab09f.css.map": "/eu-chat-kontrolle-mock/static/css/main.004ab09f.css.map",
+    "main.67c6964c.js.map": "/eu-chat-kontrolle-mock/static/js/main.67c6964c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fed5f56.css",
-    "static/js/main.c0980f52.js"
+    "static/css/main.004ab09f.css",
+    "static/js/main.67c6964c.js"
   ]
 }
