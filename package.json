@@ -30,7 +30,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": ".",
+  "homepage": "https://no_daniel_at.github.io/eu-chat-kontrolle-mock",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
