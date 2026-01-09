@@ -49,7 +49,7 @@ const ASSETS = {
     }
 };
 
-// Sequence: Left -> Right -> Down
+// Sequence: Left -> Right -> Down .
 const DIRECTION_SEQUENCE: Direction[] = ['left', 'right', 'down'];
 
 type EyeState =
