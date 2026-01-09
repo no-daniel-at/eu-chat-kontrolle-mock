@@ -16,7 +16,7 @@ export interface AnalysisPrediction {
 // this defines entire analysis object
 export interface AnalysisResult {
   summary: string;
-  predictions:AnalysisPrediction[];
+  predictions: AnalysisPrediction[];
 }
 
 export interface ChatWindowProps {
@@ -24,4 +24,8 @@ export interface ChatWindowProps {
   setMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
   updateAnalysis: (result: AnalysisResult) => void;
   loadChat: (id: string | null, isTemplate?: boolean) => void;
+  chatPartnerName: string;
+  suggestedMessage?: string;
+  onSend?: (message: string) => void;
+  availableTemplates?: string[];
 }

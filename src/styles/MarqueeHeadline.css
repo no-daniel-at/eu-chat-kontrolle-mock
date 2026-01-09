@@ -1,0 +1,41 @@
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* optional: mask for fade effect on edges */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    justify-content: space-around;
+    animation: marquee linear infinite;
+    user-select: none;
+    will-change: transform;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-content h1 {
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding-left: 50px;
+    /* Gap between repeats */
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.02em;
+}
