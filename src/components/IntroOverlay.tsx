@@ -24,24 +24,28 @@ const ANIM_CONFIG = {
 
 type Direction = 'down' | 'left' | 'right';
 
+const getAssetPath = (path: string) => {
+    return process.env.PUBLIC_URL + path;
+};
+
 // File mappings
 const ASSETS = {
-    idle: '/middle.png',
-    blink: '/blink_middle_10.gif',
+    idle: getAssetPath('/middle.png'),
+    blink: getAssetPath('/blink_middle_10.gif'),
     down: {
-        move: '/middle_down_10.gif',
-        hold: '/down.png',
-        return: '/down_middle_10.gif'
+        move: getAssetPath('/middle_down_10.gif'),
+        hold: getAssetPath('/down.png'),
+        return: getAssetPath('/down_middle_10.gif')
     },
     left: {
-        move: '/middle_left_10.gif',
-        hold: '/left.png',
-        return: '/left_middle_10.gif'
+        move: getAssetPath('/middle_left_10.gif'),
+        hold: getAssetPath('/left.png'),
+        return: getAssetPath('/left_middle_10.gif')
     },
     right: {
-        move: '/middle_right_10.gif',
-        hold: '/right.png',
-        return: '/right_middle_10.gif'
+        move: getAssetPath('/middle_right_10.gif'),
+        hold: getAssetPath('/right.png'),
+        return: getAssetPath('/right_middle_10.gif')
     }
 };
 
