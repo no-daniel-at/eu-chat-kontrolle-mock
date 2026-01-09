@@ -173,6 +173,10 @@ function App() {
     <div className={themeClasses} style={{ position: 'relative' }}>
       <IntroOverlay theme={activeTheme} />
       <ArrowOverlay theme={activeTheme} color={themeConfig.intro.fontColor} />
+      {/* DEBUG INDICATOR - Remove after fixing */}
+      <div style={{ position: 'fixed', top: 0, left: 0, zIndex: 10000, background: 'red', color: 'white', padding: '5px' }}>
+        Theme: {activeTheme}
+      </div>
       <CanvasBackground theme={activeTheme} />
       <LandingSection themeConfig={themeConfig} />
 
